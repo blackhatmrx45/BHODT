@@ -1,0 +1,6 @@
+{
+  "name": "BHODT - Black Har Official Developing Team",
+  "description": "Official website for BHODT (Black Har Official Developing Team). Modern websites, digital solutions, and authorized cybersecurity services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

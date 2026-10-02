@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <defs>
+    <linearGradient id="bhodt-cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="50%" stop-color="#00CED1" />
+      <stop offset="100%" stop-color="#1E90FF" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Emblem: Hex Shield with Cyber Vector Node -->
+  <g transform="translate(6, 6)">
+    <!-- Outer Shield Contour -->
+    <polygon points="24,2 44,12 44,34 24,46 4,34 4,12" stroke="url(#bhodt-cyan-grad)" stroke-width="2.5" fill="#0A0A1A" fill-opacity="0.85" filter="url(#glow)" />
+    <!-- Inner Core Geometry: Stylized B / Node -->
+    <path d="M14,14 L28,14 Q34,14 34,20 Q34,24 28,24 L14,24 L29,24 Q35,24 35,31 Q35,37 28,37 L14,37 Z" stroke="#00FFFF" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round" />
+    <line x1="20" y1="14" x2="20" y2="37" stroke="#1E90FF" stroke-width="2" />
+    <!-- Cyber Status Node -->
+    <circle cx="24" cy="46" r="2.5" fill="#00FFFF" filter="url(#glow)" />
+    <circle cx="4" cy="12" r="1.5" fill="#00CED1" />
+    <circle cx="44" cy="12" r="1.5" fill="#00CED1" />
+  </g>
+
+  <!-- Typography: BHODT -->
+  <text x="64" y="34" font-family="'Space Grotesk', 'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="900" letter-spacing="0.08em" fill="currentColor" class="brand-text">
+    BHODT
+  </text>
+
+  <!-- Subtitle Tagline -->
+  <text x="65" y="47" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="600" letter-spacing="0.22em" fill="#00FFFF" opacity="0.9">
+    BLACK_HAR OFFICIAL
+  </text>
+</svg>

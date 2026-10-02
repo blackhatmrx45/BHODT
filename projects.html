@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Portfolio | BHODT</title>
+  <meta name="description" content="Explore showcase projects, demo applications, and authorized security review architectures developed by BHODT.">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-zone" aria-label="BHODT Home">
+        <img src="./assets/logo.svg" alt="BHODT Logo" class="brand-logo-img" width="150" height="38">
+      </a>
+
+      <nav class="nav-zone" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="security.html" class="nav-link">Security</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <div class="mobile-cta">
+          <a href="contact.html" class="btn btn-primary" style="width: 100%;">Start Project</a>
+        </div>
+      </nav>
+
+      <div class="actions-zone">
+        <button class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary btn-sm">Start Project</a>
+
+        <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: var(--header-height);">
+    <!-- HERO -->
+    <section class="section" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-kicker">Technical Portfolio</span>
+          <h1 class="section-title">Showcase of Work & Architecture</h1>
+          <p class="section-desc">
+            Explore functional demo platforms, modern web designs, and authorized security review frameworks developed by BHODT. All case studies are clearly marked demo implementations demonstrating team capabilities.
+          </p>
+        </div>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="project-filter-bar reveal" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="websites" role="tab" aria-selected="false">Websites</button>
+          <button class="filter-btn" data-filter="applications" role="tab" aria-selected="false">Applications</button>
+          <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI</button>
+          <button class="filter-btn" data-filter="security" role="tab" aria-selected="false">Security</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS GRID -->
+    <section class="section" style="background-color: var(--bg-secondary); padding-top: 2rem;">
+      <div class="container">
+        <div class="grid-3" id="projectsGrid">
+
+          <!-- Project 1: Cybersecurity -->
+          <div class="project-card-item reveal reveal-delay-1" data-category="security">
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <img src="./assets/images/project_cyber_shield_1790919786785.jpg" alt="SentinelShield Platform" class="project-img" loading="lazy">
+                <span class="project-status-tag">Demo Platform</span>
+              </div>
+              <div class="project-content">
+                <span class="project-meta">Cybersecurity &middot; Authorized Audit</span>
+                <h3 class="project-title">SentinelShield Console</h3>
+                <p class="project-desc">
+                  Simulated security testing and vulnerability assessment dashboard modeling OWASP Top 10 web risk identification and network configuration auditing.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">OWASP Standard</span>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('sentinel-shield')">View Project</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2: Web Applications -->
+          <div class="project-card-item reveal reveal-delay-2" data-category="applications">
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <img src="./assets/images/project_web_platform_1790919800178.jpg" alt="NexusCloud Enterprise Portal" class="project-img" loading="lazy">
+                <span class="project-status-tag">Active Prototype</span>
+              </div>
+              <div class="project-content">
+                <span class="project-meta">Web Application &middot; SaaS</span>
+                <h3 class="project-title">NexusCloud Operations</h3>
+                <p class="project-desc">
+                  High-throughput cloud operations portal engineered with role-based access control, distributed audit logging, and responsive real-time visualizers.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">React 19</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">TailwindCSS</span>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('nexus-cloud')">View Project</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: AI Integration -->
+          <div class="project-card-item reveal reveal-delay-3" data-category="ai">
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <img src="./assets/images/project_ai_system_1790919811880.jpg" alt="OmniNeural AI Analytics" class="project-img" loading="lazy">
+                <span class="project-status-tag">Internal Demo</span>
+              </div>
+              <div class="project-content">
+                <span class="project-meta">AI Integration &middot; NLP</span>
+                <h3 class="project-title">OmniNeural Pipeline</h3>
+                <p class="project-desc">
+                  Streamlined intelligent data ingestion and natural language query service designed to summarize structured incident metrics without external leaks.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">FastAPI</span>
+                  <span class="tech-tag">Vector DB</span>
+                  <span class="tech-tag">TailwindCSS</span>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('omni-neural')">View Project</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 4: E-Commerce Website -->
+          <div class="project-card-item reveal reveal-delay-1" data-category="websites">
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <img src="./assets/images/bhodt_hero_tech_1790919773101.jpg" alt="ApexCore Digital Storefront" class="project-img" loading="lazy">
+                <span class="project-status-tag">Demo Showcase</span>
+              </div>
+              <div class="project-content">
+                <span class="project-meta">Business Website &middot; E-Commerce</span>
+                <h3 class="project-title">ApexCore Storefront</h3>
+                <p class="project-desc">
+                  High-speed headless commerce platform achieving a 99+ Lighthouse performance rating with instant edge caching and smooth cart transitions.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">Vanilla JS</span>
+                  <span class="tech-tag">Edge Caching</span>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('apex-commerce')">View Project</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 5: Education Website -->
+          <div class="project-card-item reveal reveal-delay-2" data-category="websites">
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <img src="./assets/images/team_workspace_1790919824674.jpg" alt="VertexEdu Interactive Learning Environment" class="project-img" loading="lazy">
+                <span class="project-status-tag">Educational Demo</span>
+              </div>
+              <div class="project-content">
+                <span class="project-meta">Education Website &middot; LMS</span>
+                <h3 class="project-title">VertexEdu Learning Hub</h3>
+                <p class="project-desc">
+                  Accessible online learning management portal featuring modular curriculum pathways, interactive quizzes, and dynamic student progress tracking.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">HTML5 / CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">IndexedDB</span>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('vertex-academy')">View Project</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 6: Custom Security App -->
+          <div class="project-card-item reveal reveal-delay-3" data-category="security">
+            <article class="project-card">
+              <div class="project-img-wrapper">
+                <img src="./assets/images/project_cyber_shield_1790919786785.jpg" alt="AegisAuth Secure Access Suite" class="project-img" loading="lazy">
+                <span class="project-status-tag">Reference Design</span>
+              </div>
+              <div class="project-content">
+                <span class="project-meta">Security &middot; Access Control</span>
+                <h3 class="project-title">AegisAuth Access Gate</h3>
+                <p class="project-desc">
+                  Multi-factor authentication gate and cryptographic session token verification prototype enforcing zero-trust perimeter access policies.
+                </p>
+                <div class="project-tech-stack">
+                  <span class="tech-tag">OAuth 2.0</span>
+                  <span class="tech-tag">WebCrypto</span>
+                  <span class="tech-tag">Node.js</span>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="openProjectModal('aegis-identity')">View Project</button>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div class="modal-overlay" id="projectDetailModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+      <div class="modal-window">
+        <button class="modal-close-btn" onclick="closeModal('projectDetailModal')" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <span class="section-kicker" id="modalProjectCategory">Security Testing</span>
+        <h3 id="modalProjectTitle" style="font-size: 1.6rem; margin-top: 0.35rem; margin-bottom: 1rem;">Project Title</h3>
+        
+        <p id="modalProjectDesc" style="font-size: 1rem; line-height: 1.65; margin-bottom: 1.5rem;">
+          Detailed architecture description...
+        </p>
+
+        <div style="margin-bottom: 1.25rem;">
+          <strong style="display: block; font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; color: var(--accent-teal); margin-bottom: 0.4rem;">
+            Implementation Scope:
+          </strong>
+          <p id="modalProjectScope" style="font-size: 0.95rem; color: var(--text-primary);"></p>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+          <strong style="display: block; font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; color: var(--accent-teal); margin-bottom: 0.4rem;">
+            Technologies Applied:
+          </strong>
+          <div id="modalProjectTech" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+        </div>
+
+        <div style="margin-bottom: 1.75rem;">
+          <strong style="display: block; font-family: var(--font-mono); font-size: 0.8rem; text-transform: uppercase; color: var(--accent-teal); margin-bottom: 0.4rem;">
+            Deployment Status:
+          </strong>
+          <p id="modalProjectStatus" style="font-size: 0.9rem; color: var(--accent-primary); font-family: var(--font-mono);"></p>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-sm">Request Similar System</a>
+          <button class="btn btn-outline btn-sm" onclick="closeModal('projectDetailModal')">Close Preview</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- OFFICIAL FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="./assets/logo.svg" alt="BHODT" style="height: 38px; width: auto; margin-bottom: 0.75rem;">
+          <span class="brand-sub">BLACK_HAR_OFFICIAL_DEVELOPING_TEAM</span>
+          <p>
+            BUILD. SECURE. INNOVATE. Delivering modern web development and authorized cybersecurity services with uncompromising dedication to quality and responsibility.
+          </p>
+          <div style="display: flex; gap: 0.75rem; margin-top: 1rem;">
+            <a href="https://wa.me/94724332896" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            </a>
+            <a href="mailto:contact@bhodt.dev" class="social-icon-btn" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Telegram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.195 1.006.128.832.941z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About BHODT</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Web Development</a></li>
+            <li><a href="services.html">UI/UX Design</a></li>
+            <li><a href="services.html">Web Applications</a></li>
+            <li><a href="services.html">AI Integration</a></li>
+            <li><a href="security.html">Authorized Security</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Contact</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">
+            Official WhatsApp:<br>
+            <strong style="color: var(--accent-primary);">0724332896</strong><br>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">(Intl: +94 72 433 2896)</span>
+          </p>
+          <p style="font-size: 0.9rem;">
+            Official Email:<br>
+            <a href="mailto:contact@bhodt.dev" style="color: var(--accent-primary);">contact@bhodt.dev</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 BHODT (BLACK_HAR_OFFICIAL_DEVELOPING_TEAM). All Rights Reserved.
+        </div>
+        <div class="footer-bottom-motto">
+          Built with technology, creativity and responsibility.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/animations.js"></script>
+  <script src="./js/projects.js"></script>
+</body>
+</html>
